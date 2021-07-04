@@ -5,6 +5,12 @@ class Cb < Formula
   sha256 "6be32df8dd65c4a69a4558eafdb52bac8986e06e88366fc4fcffb9d13f37badd"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/will/homebrew-cb/releases/download/cb-0.3.1"
+    sha256 cellar: :any,                 catalina:     "5f3b16a2f9f9c15288204fce1562628528f2c04420f0f8883f7e4bbb1ea29c23"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd4487cd975efc6b40d727970dc2b500c59771e4bc3953e7049512a8165800c6"
+  end
+
   head do
     url "https://github.com/will/cb.git"
   end

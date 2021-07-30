@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 ver = ARGV[0]
 p ver
 

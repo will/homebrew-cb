@@ -1,16 +1,9 @@
 class Cb < Formula
   desc "CLI for Crunchy Bridge"
   homepage "https://crunchybridge.com"
-  url "https://github.com/will/cb/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "ba9a0674b43d9b7414b395b74ce3b9d500f856c8f9487eefcff0cc678e5d8c4d"
+  url "https://github.com/will/cb/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "843da351063092a73191d91e67243b4ae8a1ae5577ff06123a6f46d385a6ecd4"
   license "GPL-3.0-or-later"
-
-  bottle do
-    root_url "https://github.com/will/homebrew-cb/releases/download/cb-0.4.0"
-    sha256 cellar: :any, catalina: "fb2d48bfa21b646af3eb46d083bbf54a94ecc99d50ccb62ebdadbc45d2d874ba"
-    sha256 cellar: :any, arm64_big_sur: "3d60d4a7cc5810a1609d39a9da90d9006bf0ebdd0d386087e477a5564d9c44ae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "6bda5a5e7608ed6e22a4fbd795111629ab35efed3455596a096874ce0020b658"
-  end
 
   head do
     url "https://github.com/will/cb.git"

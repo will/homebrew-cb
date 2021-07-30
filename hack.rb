@@ -17,7 +17,7 @@ Dir.chdir "scratch"
 `rm bottle.tgz`
 `rm -rf cb/#{ver}/bin/cb`
 `mv binary cb/#{ver}/bin/cb`
-`chmod -w cb/0.5.0/bin/cb`
+`chmod -w cb/#{ver}/bin/cb`
 `tar cvzf cb-#{ver}.arm64_big_sur.bottle.tar.gz cb`
 `rm -rf cb`
 sha = `sha256sum cb-#{ver}.arm64_big_sur.bottle.tar.gz`.split(" ").first

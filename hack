@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 ver = ARGV[0]
 p ver
 
@@ -21,8 +23,7 @@ Dir.chdir "scratch"
 `chmod -w cb/#{ver}/bin/cb`
 `tar cvzf cb-#{ver}.arm64_big_sur.bottle.tar.gz cb`
 `rm -rf cb`
-sha = `sha256sum cb-#{ver}.arm64_big_sur.bottle.tar.gz`.split(" ").first
-
+sha = `sha256sum cb-#{ver}.arm64_big_sur.bottle.tar.gz`.split.first
 
 Dir.chdir ".."
 `sed -i '' '10i\\
@@ -30,4 +31,3 @@ sha256 cellar: :any, arm64_big_sur: "#{sha}"
 ' Formula/cb.rb`
 p `brew style --fix Formula/cb.rb`
 p `brew audit --formula Formula/cb.rb`
-

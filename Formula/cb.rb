@@ -7,8 +7,9 @@ class Cb < Formula
 
   bottle do
     root_url "https://github.com/will/homebrew-cb/releases/download/cb-0.7.2"
-    sha256 cellar: :any,                 catalina:     "71c2b7301cd9b8b5187890c720dda5f645b0fd8375801451bbe9c5fd62c515fd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "56e0599a83048811c6d40775dda3fb949d9ef93f438f40e0f890c625eaf67480"
+    sha256 cellar: :any,                     arm64_big_sur: "4fd43c7aba330bb586eac53c32a33f411cda25acf5959479e6b2376d22cc72e1"
+    sha256 cellar: :any,                     catalina:      "71c2b7301cd9b8b5187890c720dda5f645b0fd8375801451bbe9c5fd62c515fd"
+    sha256 cellar: :any_skip_relocation,     x86_64_linux:  "56e0599a83048811c6d40775dda3fb949d9ef93f438f40e0f890c625eaf67480"
   end
 
   head do

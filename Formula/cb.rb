@@ -6,10 +6,9 @@ class Cb < Formula
   license "GPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/will/homebrew-cb/releases/download/cb-0.6.0"
-    sha256 cellar: :any,                     arm64_big_sur: "ea5416486425cfae1c712c3c05f7d5ca74cfc6d68ec7fe9bb223d25ae162d680"
-    sha256 cellar: :any,                     catalina:      "acf3dbccb7d139a3567bd17393d0579de90752d24817aec17b67bd56688e4e28"
-    sha256 cellar: :any_skip_relocation,     x86_64_linux:  "5e185cdf77c6ff522653336712b8b70bc2309542c67d6da62cf0bffb36a11e91"
+    root_url "https://github.com/will/homebrew-cb/releases/download/cb-0.7.0"
+    sha256 cellar: :any,                 catalina:     "bef1eeafc4b59eb9a419ee7a1588f2ba5482c7d9df6b9ea04167e6ab371ad94b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9611c90c843c60401d9fbbf4909fc8887d12225d1549b1c3997a27a2e64fa6f8"
   end
 
   head do

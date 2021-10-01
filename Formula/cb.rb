@@ -1,4 +1,5 @@
 class Cb < Formula
+  deprecate! date: "2021-09-30", because: "moved to crunchydata/brew/cb"
   desc "CLI for Crunchy Bridge"
   homepage "https://crunchybridge.com"
   url "https://github.com/will/cb/archive/refs/tags/v0.7.2.tar.gz"
